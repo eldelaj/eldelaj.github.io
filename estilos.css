@@ -1,0 +1,240 @@
+body{
+    background-color: #8a8d8f;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+body.no-scroll{
+    overflow: hidden;
+}
+header{
+    background-color: rgb(192, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+    height: 3.5rem;
+}
+#menu, #menu-check{
+    display: none;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    padding:18px;
+}
+.logo{
+    display: inline-block;
+}
+.logo img{
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    border: 5px solid rgb(192, 0, 0);
+    top: 10px;
+    width: 100px;
+    bottom: 160px;
+}
+.iconos{
+    position: absolute;
+    top: 8%;
+    display: inline-block;
+    left: 87%;
+}
+.iconos img{
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(192, 0, 0);
+}
+.productos{
+  display: flex;
+  background-color: red;
+  padding: 10px;
+}
+.productos img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.productos img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.texto{
+    padding: 10px;
+    background-color: white;
+}
+.texto h2{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: cursive;
+}
+.texto p{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: cursive;
+}
+.ofertas{
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.ofertas img{
+    width: 0px;
+    flex-grow: 1;
+    margin: 1%;
+}
+.textoimg{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+.textoimg p{
+    text-align: center;
+    width: 0px;
+    flex-grow: 1;
+    margin: 1%;
+}
+.pedidos{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: white;
+}
+.pedidos img{
+    width: 55px;
+    height: 55px;
+}
+.pedidos p{
+    padding: 10px;
+    text-align: justify;
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.pie ul{
+    flex-grow: 1;
+    width: 0px;
+}
+footer{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    position: relative;
+}
+footer img{
+    width: 30px;
+    background-color: #8a8d8f;
+}
+footer p{
+    position: absolute;
+    left: 75%;
+    bottom: 0px;
+}
+@media screen and (max-width:960px) {
+    .iconos{
+        left: 84%;
+    }
+    footer p{
+        left: 60%;
+    }
+}
+@media screen and (max-width:700px) {
+    header nav {
+        display: none;
+    }
+    header nav.visible{
+        display: block;
+    }
+    #menu.salir #menu-abrir{
+        display: none;
+    }
+    #menu.salir #menu-cerrar{
+        display: block;
+    }
+    #menu, #menu-check{
+        display: flex;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    header nav {
+        display: none;
+    }
+    header{
+        height: 2.5rem;
+    }
+    .pedidos img{
+        width: 35px;
+        height: 35px;
+    }
+    .pedidos p{
+        font-size: 9px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .pie{
+        font-size: 10px;
+    }
+    .pie ul h2{
+        font-size: 12px;
+    }
+    footer p{
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        font-size: 10px;
+    }
+    .logo img{
+        left: 45%;
+        width: 85px;
+    }
+    .iconos img{
+        width: 20px;
+    }
+    .iconos{
+        position: absolute;
+        top: 10%;
+        display: inline-block;
+        left: 75%;
+    }
+    header nav.visible{
+        display: block;
+    }
+    #menu.salir #menu-abrir{
+        display: none;
+    }
+    #menu.salir #menu-cerrar{
+        display: block;
+    }
+    #menu, #menu-check{
+        display: flex;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+}
